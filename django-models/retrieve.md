@@ -1,0 +1,6 @@
+Book.objects.all()
+
+
+
+
+
