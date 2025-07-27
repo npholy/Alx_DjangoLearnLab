@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     "accounts",
     "relationship_app",
 ]
+AUTH_USER_MODEL = 'accounts.CustomUser'
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
@@ -130,4 +131,3 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 LOGIN_REDIRECT_URL = '/'
 LOGOUT_REDIRECT_URL = '/logout/'
-AUTH_USER_MODEL = "accounts.CustomUser"
