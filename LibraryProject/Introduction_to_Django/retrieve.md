@@ -1,6 +1,0 @@
-Book.objects.all()
-
-
-
-
-
