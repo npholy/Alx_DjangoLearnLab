@@ -1,13 +1,12 @@
-from rest_framework import generics, viewsets
-from .models import Book
+from rest_framework import generics
+from rest_framework.viewsets import ModelViewSet
+from bookshelf.models import Book
 from .serializers import BookSerializer
 
-# Existing ListAPIView
 class BookList(generics.ListAPIView):
     queryset = Book.objects.all()
     serializer_class = BookSerializer
 
-# New CRUD ViewSet
-class BookViewSet(viewsets.ModelViewSet):
+class BookViewSet(ModelViewSet):
     queryset = Book.objects.all()
     serializer_class = BookSerializer
